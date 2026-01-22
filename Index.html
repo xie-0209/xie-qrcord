@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>網址轉 QR Code</title>
+  <link rel="stylesheet" href="slyte.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>URL → QR Code 產生器</h1>
+
+    <div class="card">
+      <label>輸入網址</label>
+      <input id="url" placeholder="https://example.com" />
+      <button onclick="generateQR()">產生 QR Code</button>
+    </div>
+
+    <div class="card result" id="result">
+      <div class="loading" id="loading">計算中...</div>
+      <div id="qrcode"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
